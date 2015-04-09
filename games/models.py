@@ -19,4 +19,3 @@ class Phrase(models.Model):
         if not self.id or not self.created_on:
             self.created_on = datetime.datetime.today()
         return super(Phrase, self).save(*args, **kwargs)   
-

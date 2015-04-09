@@ -8,6 +8,7 @@ from datetime import datetime
 from allauth.socialaccount.providers.facebook.views import FacebookOAuth2Adapter
 from rest_auth.registration.views import SocialLogin
 
+
 class PhraseViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows game phrases to be viewed or edited.
