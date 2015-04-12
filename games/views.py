@@ -1,13 +1,38 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from rest_framework.response import Response
-from games.serializers import PhraseSerializer, UserSerializer, GroupSerializer
+from games.serializers import GameSerializer, PhraseSerializer, UserSerializer, GroupSerializer
 from rest_framework.decorators import detail_route
-from games.models import Phrase
+from games.models import Phrase, Game, Player
 from datetime import datetime
 from allauth.socialaccount.providers.facebook.views import FacebookOAuth2Adapter
 from rest_auth.registration.views import SocialLogin
 
+class GameViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows games to be viewed or edited.
+    """
+    queryset = Game.objects.all()
+    serializer_class = GameSerializer
+    def create(self, request):
+        serializer = GameSerializer(data=request.data)
+        if serializer.is_valid():
+            print type(serializer)
+            new_game = Game()
+            new_game.name = request.data['name']
+            new_game.motto = request.data['motto']
+            new_game.save()
+
+            new_player = Player()
+            new_player.game = new_game
+            new_player.nickname = request.data['nickname']
+            new_player.user= request.user
+            new_player.save()
+
+            return Response({'status': 'game set', 'game_id': new_game.id})
+        else:
+            return Response(serializer.errors,
+                            status=status.HTTP_400_BAD_REQUEST)
 
 class PhraseViewSet(viewsets.ModelViewSet):
     """

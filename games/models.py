@@ -1,6 +1,8 @@
 from django.db import models
 import datetime
+from django.contrib.auth.models import User
 from userprofile.models import UserProfile
+
 
 class Game(models.Model):
     name = models.CharField(max_length=50)
@@ -17,7 +19,7 @@ class Game(models.Model):
 class Player(models.Model):
     game = models.ForeignKey(Game)
     nickname = models.CharField(max_length=64)
-    userprofile = models.ForeignKey(UserProfile)
+    user = models.ForeignKey(User)
     created_on = models.DateTimeField(editable=False)
     def save(self, *args, **kwargs):
         ''' On save, update timestamps '''
@@ -36,4 +38,4 @@ class Phrase(models.Model):
         ''' On save, update timestamps '''
         if not self.id or not self.created_on:
             self.created_on = datetime.datetime.today()
-        return super(Phrase, self).save(*args, **kwargs)   
+        return super(Phrase, self).save(*args, **kwargs)
