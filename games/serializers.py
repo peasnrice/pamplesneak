@@ -5,7 +5,7 @@ from games.models import Phrase, Game
 class GameSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Game
-        fields = ('url', 'id', 'name', 'motto')
+        fields = ('url', 'id', 'name', 'motto', 'created_on')
 
 class PhraseSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:

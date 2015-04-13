@@ -7,6 +7,7 @@ from userprofile.models import UserProfile
 class Game(models.Model):
     name = models.CharField(max_length=50)
     motto = models.CharField(max_length=100)
+    passcode = models.CharField(max_length=16, null=True)
     created_on = models.DateTimeField(editable=False)
     def __str__(self):
         return self.name
