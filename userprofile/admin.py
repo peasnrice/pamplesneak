@@ -1,5 +1,4 @@
 from django.contrib import admin
-from userprofile.models import UserProfile, Nickname
+from userprofile.models import UserProfile
 
 admin.site.register(UserProfile)
-admin.site.register(Nickname)

@@ -1,9 +1,9 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from rest_framework.response import Response
-from games.serializers import GameSerializer, PhraseSerializer, UserSerializer, GroupSerializer
-from rest_framework.decorators import detail_route
-from games.models import Phrase, Game, Player
+from games.serializers import GameSerializer, PlayerSerializer, PhraseSerializer, UserSerializer, GroupSerializer
+from rest_framework.decorators import detail_route, list_route
+from games.models import Phrase, Game, Player, GamePlayerDetail
 from datetime import datetime
 from allauth.socialaccount.providers.facebook.views import FacebookOAuth2Adapter
 from rest_auth.registration.views import SocialLogin
@@ -14,26 +14,68 @@ class GameViewSet(viewsets.ModelViewSet):
     """
     queryset = Game.objects.all()
     serializer_class = GameSerializer
+
+    @detail_route(methods=['post'])
+    def add_player(self, request, pk=None):
+        game = self.get_object()
+        serializer = PlayerSerializer(data=request.data)
+        if serializer.is_valid():
+
+            return Response({'status': 'player saved to game'})
+        else:
+            return Response(serializer.errors,
+                            status=status.HTTP_400_BAD_REQUEST)
+
     def create(self, request):
         serializer = GameSerializer(data=request.data)
         if serializer.is_valid():
             print type(serializer)
+
+            user = request.user
+            player = user.player
+            print player.hosted_count
+            player.hosted_count += 1
+            if player.nickname == "":
+                player.nickname = user.username
+                player.save()
+            player.save()
+
             new_game = Game()
+            new_game.host = player
             new_game.name = request.data['name']
             new_game.motto = request.data['motto']
             new_game.passcode = request.data['passcode']
             new_game.save()
 
-            new_player = Player()
-            new_player.game = new_game
-            new_player.nickname = request.data['nickname']
-            new_player.user= request.user
-            new_player.save()
+            new_game_player_detail = GamePlayerDetail()
+            new_game_player_detail.game = new_game
+            new_game_player_detail.player = player
+            new_game_player_detail.save()
 
             return Response({'status': 'game set', 'game_id': new_game.id})
         else:
             return Response(serializer.errors,
                             status=status.HTTP_400_BAD_REQUEST)
+    # def get(self, request):
+    #     serializer = GameSerializer(data=request.data)
+    #     if serializer.is_valid():
+
+    #         if request.data['type'] = "hosted":
+    #             return Response({'status': 'hosted game returned!'})
+    #         elif request.data['type'] = "joined":
+    #             return Response({'status': 'joined game returned!'})
+    #         else: 
+    #             return Response({'status': 'nothing to return!'})
+    #     else: 
+    #         return Response(serializer.errors,
+    #                         status=status.HTTP_400_BAD_REQUEST)
+
+class PlayerViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows players to be viewed or edited.
+    """ 
+    queryset = Player.objects.all()
+    serializer_class = PlayerSerializer
 
 class PhraseViewSet(viewsets.ModelViewSet):
     """
