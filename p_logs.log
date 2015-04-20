@@ -1,0 +1,848 @@
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 45, in create
+    status=status.HTTP_400_BAD_REQUEST)
+NameError: global name 'status' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 20, in create
+    serializer = serializer_class(data=request.data)
+NameError: global name 'serializer_class' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 5, in <module>
+    from games.serializers import GameSerializer, PlayerSerializer, PhraseSerializer, UserSerializer, GroupSerializer
+  File "/Users/peasnrice/django_projects/pamplesneak/games/serializers.py", line 30
+    players = models.ManyToManyField(Player, blank=True, null=True, related_name='games')
+   ^
+IndentationError: unexpected indent
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 5, in <module>
+    from games.serializers import GameSerializer, PlayerSerializer, PhraseSerializer, UserSerializer, GroupSerializer
+  File "/Users/peasnrice/django_projects/pamplesneak/games/serializers.py", line 30
+    players = models.ManyToManyField(Player, blank=True, null=True, related_name='games')
+   ^
+IndentationError: unexpected indent
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 21, in create
+    print serializer.is_valid()
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 187, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 367, in run_validation
+    value = self.to_internal_value(data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 392, in to_internal_value
+    field for field in self.fields.values()
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 313, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 857, in get_fields
+    field_name, info, model, depth
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 980, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 1068, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `player` is not valid for model `Game`.
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 21, in create
+    print serializer.is_valid()
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 187, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 367, in run_validation
+    value = self.to_internal_value(data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 392, in to_internal_value
+    field for field in self.fields.values()
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 313, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 857, in get_fields
+    field_name, info, model, depth
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 980, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 1068, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `player` is not valid for model `Game`.
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 21, in create
+    print serializer.is_valid()
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 187, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 367, in run_validation
+    value = self.to_internal_value(data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 392, in to_internal_value
+    field for field in self.fields.values()
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 313, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 857, in get_fields
+    field_name, info, model, depth
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 980, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 1068, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `player` is not valid for model `Game`.
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 21, in create
+    print serializer.is_valid()
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 187, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 367, in run_validation
+    value = self.to_internal_value(data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 392, in to_internal_value
+    field for field in self.fields.values()
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 313, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 857, in get_fields
+    field_name, info, model, depth
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 980, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 1068, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `player` is not valid for model `Game`.
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 44, in create
+    return Response({'status': 'game set', 'game_id': new_game.id})
+NameError: global name 'new_game' is not defined
+Internal Server Error: /admin/games/player/add/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 567, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 105, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 204, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 29, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 105, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/transaction.py", line 394, in inner
+    return func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1388, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1029, in save_model
+    obj.save()
+  File "/Users/peasnrice/django_projects/pamplesneak/games/models.py", line 23, in save
+    return super(Player, self).save(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/base.py", line 590, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/base.py", line 618, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/base.py", line 699, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/base.py", line 732, in _do_insert
+    using=using, raw=raw)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 920, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 81, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 485, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: games_player.user_id
+Internal Server Error: /players/6
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8100/players/6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /users/get_player
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 614, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 489, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 80, in <module>
+    class UserViewSet(viewsets.ModelViewSet):
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 87, in UserViewSet
+    @api_view(['get'])
+NameError: name 'api_view' is not defined
+Internal Server Error: /users/get_player/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get_player() takes exactly 1 argument (2 given)
+Internal Server Error: /users/get_player/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get_player() takes exactly 1 argument (2 given)
+Internal Server Error: /users/get_player/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get_player() takes exactly 1 argument (2 given)
+Internal Server Error: /users/current_user/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 91, in current_user
+    return Response(serializer.data)
+AttributeError: 'User' object has no attribute 'data'
+Internal Server Error: /users/current_user/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/renderers.py", line 99, in render
+    separators=separators
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/utils/encoders.py", line 61, in default
+    return super(JSONEncoder, self).default(obj)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: UserSerializer(<User: andy>):
+    url = HyperlinkedIdentityField(view_name='user-detail')
+    username = CharField(help_text='Required. 30 characters or fewer. Letters, digits and @/./+/-/_ only.', max_length=30, validators=[<django.core.validators.RegexValidator object>, <UniqueValidator(queryset=User.objects.all())>])
+    email = EmailField(allow_blank=True, label='Email address', max_length=75, required=False)
+    groups = HyperlinkedRelatedField(help_text='The groups this user belongs to. A user will get all permissions granted to each of his/her group.', many=True, queryset=Group.objects.all(), view_name='group-detail') is not JSON serializable
+Internal Server Error: /users/current_user/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/renderers.py", line 99, in render
+    separators=separators
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/utils/encoders.py", line 61, in default
+    return super(JSONEncoder, self).default(obj)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: UserSerializer(<User: andy>):
+    url = HyperlinkedIdentityField(view_name='user-detail')
+    username = CharField(help_text='Required. 30 characters or fewer. Letters, digits and @/./+/-/_ only.', max_length=30, validators=[<django.core.validators.RegexValidator object>, <UniqueValidator(queryset=User.objects.all())>])
+    email = EmailField(allow_blank=True, label='Email address', max_length=75, required=False)
+    groups = HyperlinkedRelatedField(help_text='The groups this user belongs to. A user will get all permissions granted to each of his/her group.', many=True, queryset=Group.objects.all(), view_name='group-detail') is not JSON serializable
+Internal Server Error: /users/current_user
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 614, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 489, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 80, in <module>
+    class UserViewSet(viewsets.ModelViewSet):
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 87, in UserViewSet
+    @api_view(['GET'])
+NameError: name 'api_view' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 46, in create
+    new_game_player_detail.players.add(player)
+AttributeError: 'GamePlayerDetail' object has no attribute 'players'
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 39, in create
+    new_game.players.add(player)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/fields/related.py", line 1162, in __get__
+    through=self.field.rel.through,
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/fields/related.py", line 827, in __init__
+    (instance, source_field_name))
+ValueError: "<Game: >" needs to have a value for field "game" before this many-to-many relationship can be used.
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 39, in create
+    new_game.players.add(player)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/fields/related.py", line 1162, in __get__
+    through=self.field.rel.through,
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/fields/related.py", line 827, in __init__
+    (instance, source_field_name))
+ValueError: "<Game: >" needs to have a value for field "game" before this many-to-many relationship can be used.
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 39, in create
+    new_game.players.add(player)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/fields/related.py", line 1162, in __get__
+    through=self.field.rel.through,
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/fields/related.py", line 827, in __init__
+    (instance, source_field_name))
+ValueError: "<Game: >" needs to have a value for field "game" before this many-to-many relationship can be used.
+Internal Server Error: /games
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 614, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 489, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 5, in <module>
+    from games.serializers import GameSerializer, PlayerSerializer, PhraseSerializer, UserSerializer, GroupSerializer
+  File "/Users/peasnrice/django_projects/pamplesneak/games/serializers.py", line 5, in <module>
+    class PlayerSerializer(serializers.HyperlinkedModelSerializer):
+  File "/Users/peasnrice/django_projects/pamplesneak/games/serializers.py", line 6, in PlayerSerializer
+    players = PlayerSerializer(many=True, read_only=True)
+NameError: name 'PlayerSerializer' is not defined
+Internal Server Error: /games/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 39, in create
+    new_game.players.add(player)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/fields/related.py", line 1162, in __get__
+    through=self.field.rel.through,
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/fields/related.py", line 827, in __init__
+    (instance, source_field_name))
+ValueError: "<Game: >" needs to have a value for field "game" before this many-to-many relationship can be used.

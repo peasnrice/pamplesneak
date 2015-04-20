@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from rest_framework.response import Response
+from rest_framework import status
 from games.serializers import GameSerializer, PlayerSerializer, PhraseSerializer, UserSerializer, GroupSerializer
 from rest_framework.decorators import detail_route, list_route
 from games.models import Phrase, Game, Player, GamePlayerDetail
@@ -15,29 +16,20 @@ class GameViewSet(viewsets.ModelViewSet):
     queryset = Game.objects.all()
     serializer_class = GameSerializer
 
-    @detail_route(methods=['post'])
-    def add_player(self, request, pk=None):
-        game = self.get_object()
-        serializer = PlayerSerializer(data=request.data)
-        if serializer.is_valid():
-
-            return Response({'status': 'player saved to game'})
-        else:
-            return Response(serializer.errors,
-                            status=status.HTTP_400_BAD_REQUEST)
-
     def create(self, request):
         serializer = GameSerializer(data=request.data)
         if serializer.is_valid():
-            print type(serializer)
 
             user = request.user
             player = user.player
-            print player.hosted_count
+
             player.hosted_count += 1
-            if player.nickname == "":
-                player.nickname = user.username
-                player.save()
+            player.game_count += 1
+            if request.data['nickname'] != "":
+                player.nickname = request.data['nickname']
+            elif  player.nickname == "":
+                player.nickname = player.user.username
+
             player.save()
 
             new_game = Game()
@@ -46,6 +38,7 @@ class GameViewSet(viewsets.ModelViewSet):
             new_game.motto = request.data['motto']
             new_game.passcode = request.data['passcode']
             new_game.save()
+            new_game.players.add(player)
 
             new_game_player_detail = GamePlayerDetail()
             new_game_player_detail.game = new_game
@@ -54,21 +47,7 @@ class GameViewSet(viewsets.ModelViewSet):
 
             return Response({'status': 'game set', 'game_id': new_game.id})
         else:
-            return Response(serializer.errors,
-                            status=status.HTTP_400_BAD_REQUEST)
-    # def get(self, request):
-    #     serializer = GameSerializer(data=request.data)
-    #     if serializer.is_valid():
-
-    #         if request.data['type'] = "hosted":
-    #             return Response({'status': 'hosted game returned!'})
-    #         elif request.data['type'] = "joined":
-    #             return Response({'status': 'joined game returned!'})
-    #         else: 
-    #             return Response({'status': 'nothing to return!'})
-    #     else: 
-    #         return Response(serializer.errors,
-    #                         status=status.HTTP_400_BAD_REQUEST)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class PlayerViewSet(viewsets.ModelViewSet):
     """
@@ -76,6 +55,7 @@ class PlayerViewSet(viewsets.ModelViewSet):
     """ 
     queryset = Player.objects.all()
     serializer_class = PlayerSerializer
+
 
 class PhraseViewSet(viewsets.ModelViewSet):
     """
@@ -103,6 +83,8 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+
 
 
 class GroupViewSet(viewsets.ModelViewSet):
