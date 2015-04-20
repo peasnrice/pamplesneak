@@ -846,3 +846,366 @@ Traceback (most recent call last):
   File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/fields/related.py", line 827, in __init__
     (instance, source_field_name))
 ValueError: "<Game: >" needs to have a value for field "game" before this many-to-many relationship can be used.
+Internal Server Error: /games/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 54, in join_game
+    data = request.data.id
+AttributeError: 'QueryDict' object has no attribute 'id'
+Internal Server Error: /games/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 54, in join_game
+    data = request.data.id
+AttributeError: 'QueryDict' object has no attribute 'id'
+Internal Server Error: /games/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 54, in join_game
+    data = request.data.gameId
+AttributeError: 'QueryDict' object has no attribute 'gameId'
+Internal Server Error: /games/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 54, in join_game
+    data = request.data.gameId
+AttributeError: 'QueryDict' object has no attribute 'gameId'
+Internal Server Error: /games/join_game
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8100/games/join_game/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /games/join_game
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8100/games/join_game/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /games/join_game
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8100/games/join_game/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /games/join_game
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8100/games/join_game/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /games/join_game
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8100/games/join_game/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /games/join_game
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8100/games/join_game/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /games/join_game
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8100/games/join_game/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /games/join_game
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8100/games/join_game/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /games/join_game
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8100/games/join_game/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /games/join_game
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8100/games/join_game/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /games/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 55, in join_game
+    data = request.data.gameId
+AttributeError: 'QueryDict' object has no attribute 'gameId'
+Internal Server Error: /games/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 55, in join_game
+    data = request.data.gameId
+AttributeError: 'QueryDict' object has no attribute 'gameId'
+Internal Server Error: /games/17/join_game
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8100/games/17/join_game/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /admin/games/gameplayerdetail/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 59
+    if
+      ^
+SyntaxError: invalid syntax
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 60, in join_game
+    game = gpdgame.game_set
+NameError: global name 'gpdgame' is not defined
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 60, in join_game
+    gpd = game_player_detail.objects.all()
+NameError: global name 'game_player_detail' is not defined
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 62, in join_game
+    game = gpd.gpdgame_set
+AttributeError: 'QuerySet' object has no attribute 'gpdgame_set'
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 62, in join_game
+    game_player_detail = game.gpdgame_set
+AttributeError: 'Game' object has no attribute 'gpdgame_set'
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 62, in join_game
+    game_player_detail = game.gpdgame_set
+AttributeError: 'Game' object has no attribute 'gpdgame_set'
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 61, in join_game
+    players = game.gpdplayer.all()
+AttributeError: 'Game' object has no attribute 'gpdplayer'
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 59, in join_game
+    players = game.gpdplayer.all()
+AttributeError: 'Game' object has no attribute 'gpdplayer'
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 58, in join_game
+    games = game.gpdgame_set
+AttributeError: 'Game' object has no attribute 'gpdgame_set'
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 58, in join_game
+    games = game.gameplayerdetail_set
+AttributeError: 'Game' object has no attribute 'gameplayerdetail_set'
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 59, in join_game
+    players = game.gpdplayer.all()
+AttributeError: 'Game' object has no attribute 'gpdplayer'
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 454, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 374, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+Internal Server Error: /games/17/join_game/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 59, in join_game
+    players = game.gpdplayer.all()
+AttributeError: 'Game' object has no attribute 'gpdplayer'

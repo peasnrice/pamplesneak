@@ -49,6 +49,27 @@ class GameViewSet(viewsets.ModelViewSet):
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+    @detail_route(methods=['post'])
+    def join_game(self, request, pk=None):
+        game = self.get_object()
+        user = request.user
+        player = user.player
+
+        games = game.gpdgame.all()
+        players = player.gpdplayer.all()
+
+        if games and players:
+            print "player already created"
+            return Response({'status': 'player already joined'}, status=200) 
+
+        else:
+            print "new player game relationship created"
+            new_game_player_detail = GamePlayerDetail()
+            new_game_player_detail.game = game
+            new_game_player_detail.player = player
+            new_game_player_detail.save()
+            return Response({'status': 'player added'}, status=200) 
+
 class PlayerViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows players to be viewed or edited.

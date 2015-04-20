@@ -40,8 +40,8 @@ class Game(models.Model):
         return super(Game, self).save(*args, **kwargs) 
 
 class GamePlayerDetail(models.Model):
-    game = models.ForeignKey(Game)
-    player = models.ForeignKey(Player)
+    game = models.ForeignKey(Game, related_name = 'gpdgame')
+    player = models.ForeignKey(Player, related_name = 'gpdplayer')
     score = models.IntegerField(default = 0)
     def __str__(self):
         return self.game.name
