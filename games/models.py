@@ -25,7 +25,6 @@ class Player(models.Model):
 User.player = property(lambda u: Player.objects.get_or_create(user=u)[0])
 
 class Game(models.Model):
-    players = models.ManyToManyField(Player, blank=True, null=True, related_name='games')
     host = models.ForeignKey(Player, blank=True, null=True)
     name = models.CharField(max_length=50)
     motto = models.CharField(max_length=100)

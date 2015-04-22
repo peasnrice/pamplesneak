@@ -38,7 +38,6 @@ class GameViewSet(viewsets.ModelViewSet):
             new_game.motto = request.data['motto']
             new_game.passcode = request.data['passcode']
             new_game.save()
-            new_game.players.add(player)
 
             new_game_player_detail = GamePlayerDetail()
             new_game_player_detail.game = new_game
