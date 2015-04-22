@@ -21,6 +21,8 @@ def get_env_variable(var_name):
     error_msg = "Set the %s environment variable" % var_name
     raise ImproperlyConfigured(error_msg)
 
+SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
+
 DATABASES = {
   'default': {
     'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -29,8 +31,8 @@ DATABASES = {
     'PASSWORD': get_env_variable('DB_PASSWORD'),
     'HOST': get_env_variable('DB_HOST'), # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
     'PORT': '', # Set to empty string for default.
-},
-SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
+    }
+}
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
