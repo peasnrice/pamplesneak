@@ -136,7 +136,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_ROOT = get_env_variable('NGINX_STATIC_DIR')
+STATIC_ROOT = get_env_variable('STATIC_ROOT')
 
 STATIC_URL = '/static/'
 
