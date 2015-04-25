@@ -7,6 +7,7 @@ from rest_framework.decorators import detail_route, list_route
 from games.models import Phrase, Game, Player, GamePlayerDetail
 from datetime import datetime
 from allauth.socialaccount.providers.facebook.views import FacebookOAuth2Adapter
+from allauth.socialaccount.providers.github.views import GitHubOAuth2Adapter
 from rest_auth.registration.views import SocialLogin
 
 class GameViewSet(viewsets.ModelViewSet):
@@ -116,3 +117,6 @@ class GroupViewSet(viewsets.ModelViewSet):
 
 class FacebookLogin(SocialLogin):
     adapter_class = FacebookOAuth2Adapter
+
+class GitHubLogin(SocialLogin):
+    adapter_class = GitHubOAuth2Adapter

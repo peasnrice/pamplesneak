@@ -18,4 +18,5 @@ urlpatterns = [
 	url(r'^rest-auth/', include('rest_auth.urls')),
     url(r'^rest-auth/registration/', include('rest_auth.registration.urls')),
     url(r'^rest-auth/facebook/$', game_views.FacebookLogin.as_view(), name='fb_login'),
+    url(r'^rest-auth/github/$', game_views.GitHubLogin.as_view(), name='gh_login'),
 ]
