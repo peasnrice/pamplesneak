@@ -6,6 +6,7 @@ from games import views as game_views
 router = routers.DefaultRouter()
 router.register(r'games', game_views.GameViewSet)
 router.register(r'players', game_views.PlayerViewSet)
+router.register(r'gpdetail', game_views.GamePlayerDetailViewSet)
 router.register(r'phrases', game_views.PhraseViewSet)
 router.register(r'users', game_views.UserViewSet)
 router.register(r'groups', game_views.GroupViewSet)

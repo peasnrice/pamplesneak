@@ -2,13 +2,15 @@ from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
-from games.serializers import GameSerializer, PlayerSerializer, PhraseSerializer, UserSerializer, GroupSerializer
+from games.serializers import GameSerializer, PlayerSerializer, GamePlayerDetailSerializer, PhraseSerializer, UserSerializer, GroupSerializer
 from rest_framework.decorators import detail_route, list_route
 from games.models import Phrase, Game, Player, GamePlayerDetail
 from datetime import datetime
 from allauth.socialaccount.providers.facebook.views import FacebookOAuth2Adapter
 from allauth.socialaccount.providers.github.views import GitHubOAuth2Adapter
 from rest_auth.registration.views import SocialLogin
+import json
+from django.core import serializers
 
 class GameViewSet(viewsets.ModelViewSet):
     """
@@ -70,6 +72,14 @@ class GameViewSet(viewsets.ModelViewSet):
             new_game_player_detail.save()
             return Response({'status': 'player added'}, status=200) 
 
+    @detail_route(methods=['post'])
+    def create_phrase(self, request, pk=None):
+        game = self.get_object()
+        user = request.user
+        player = user.player   
+        recipient = request.data['recipient'] 
+        return Response({'status': 'phrase added'}, status=200) 
+
 class PlayerViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows players to be viewed or edited.
@@ -77,6 +87,27 @@ class PlayerViewSet(viewsets.ModelViewSet):
     queryset = Player.objects.all()
     serializer_class = PlayerSerializer
 
+    @list_route()
+    def get_players(self, request, pk=None):
+        players = []
+        game_id = int(request.query_params['game_id'])
+        related_game_player_details = GamePlayerDetail.objects.filter(game=game_id)
+        for game_player_detail in related_game_player_details:
+            player = game_player_detail.player
+            players.append(player)
+        print players
+
+        serializer = PlayerSerializer(players, many=True, context={'request': request})
+
+        return Response(serializer.data, status=200)
+
+
+class GamePlayerDetailViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows players to be viewed or edited.
+    """ 
+    queryset = GamePlayerDetail.objects.all()
+    serializer_class = GamePlayerDetailSerializer
 
 class PhraseViewSet(viewsets.ModelViewSet):
     """
@@ -104,8 +135,6 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
-
-
 
 
 class GroupViewSet(viewsets.ModelViewSet):

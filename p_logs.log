@@ -1,0 +1,622 @@
+Internal Server Error: /games/create_phrase
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8100/games/create_phrase/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /rest-auth/facebook/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 103
+    return Response({'status': 'players gotten'}, status=200, 'players'=players)
+SyntaxError: keyword can't be an expression
+Internal Server Error: /rest-auth/facebook/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 103
+    return Response({'status': 'players gotten'}, status=200, 'players'=players)
+SyntaxError: keyword can't be an expression
+Internal Server Error: /rest-auth/facebook/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 103
+    return Response({'status': 'players gotten'}, status=200, 'players'=players)
+SyntaxError: keyword can't be an expression
+Internal Server Error: /rest-auth/facebook/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 103
+    return Response({'status': 'players gotten'}, status=200, 'players'=players)
+SyntaxError: keyword can't be an expression
+Internal Server Error: /gpdetail/get_players
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8100/gpdetail/get_players/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /rest-auth/github/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_auth/views.py", line 51, in post
+    if not self.serializer.is_valid():
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 187, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 370, in run_validation
+    value = self.validate(value)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_auth/registration/serializers.py", line 30, in validate
+    response=access_token)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/allauth/socialaccount/providers/github/views.py", line 20, in complete_login
+    extra_data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/allauth/socialaccount/providers/base.py", line 52, in sociallogin_from_response
+    uid = self.extract_uid(response)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/allauth/socialaccount/providers/github/provider.py", line 25, in extract_uid
+    return str(data['id'])
+KeyError: 'id'
+Internal Server Error: /rest-auth/github/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_auth/views.py", line 51, in post
+    if not self.serializer.is_valid():
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 187, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 370, in run_validation
+    value = self.validate(value)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_auth/registration/serializers.py", line 30, in validate
+    response=access_token)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/allauth/socialaccount/providers/github/views.py", line 20, in complete_login
+    extra_data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/allauth/socialaccount/providers/base.py", line 52, in sociallogin_from_response
+    uid = self.extract_uid(response)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/allauth/socialaccount/providers/github/provider.py", line 25, in extract_uid
+    return str(data['id'])
+KeyError: 'id'
+Internal Server Error: /rest-auth/github/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_auth/views.py", line 51, in post
+    if not self.serializer.is_valid():
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 187, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 370, in run_validation
+    value = self.validate(value)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_auth/registration/serializers.py", line 30, in validate
+    response=access_token)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/allauth/socialaccount/providers/github/views.py", line 20, in complete_login
+    extra_data)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/allauth/socialaccount/providers/base.py", line 52, in sociallogin_from_response
+    uid = self.extract_uid(response)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/allauth/socialaccount/providers/github/provider.py", line 25, in extract_uid
+    return str(data['id'])
+KeyError: 'id'
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 88, in <module>
+    class GamePlayerDetailViewSet(viewsets.ModelViewSet):
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 93, in GamePlayerDetailViewSet
+    serializer_class = GamePlayerDetailSerializer
+NameError: name 'GamePlayerDetailSerializer' is not defined
+Internal Server Error: /gpdetail/22/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get_players() got an unexpected keyword argument 'pk'
+Internal Server Error: /gpdetail/22/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 98, in get_players
+    game_id = int(request.data['game_id'])
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'game_id'"
+Internal Server Error: /gpdetail/22/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 98, in get_players
+    game_id = int(request.data['game_id'])
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'game_id'"
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 98, in get_players
+    game_id = int(request.data['game_id'])
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'game_id'"
+Internal Server Error: /admin/games/player/add/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 567, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 105, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 204, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 29, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 105, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/transaction.py", line 394, in inner
+    return func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1388, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1029, in save_model
+    obj.save()
+  File "/Users/peasnrice/django_projects/pamplesneak/games/models.py", line 23, in save
+    return super(Player, self).save(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/base.py", line 590, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/base.py", line 618, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/base.py", line 699, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/base.py", line 732, in _do_insert
+    using=using, raw=raw)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 920, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 81, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 485, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: games_player.user_id
+Internal Server Error: /admin/games/player/1/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 567, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 105, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 52, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 204, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1440, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 29, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 105, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/db/transaction.py", line 394, in inner
+    return func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1403, in changeform_view
+    form = ModelForm(instance=obj)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/forms.py", line 21, in __init__
+    self.initial['games'] = self.instance.games.values_list('pk', flat=True)
+AttributeError: 'Player' object has no attribute 'games'
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/response.py", line 59, in rendered_content
+    ret = renderer.render(self.data, media_type, context)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/renderers.py", line 99, in render
+    separators=separators
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/utils/encoders.py", line 61, in default
+    return super(JSONEncoder, self).default(obj)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <Player: andy> is not JSON serializable
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 106, in get_players
+    results = [ob.as_json() for ob in players]
+AttributeError: 'Player' object has no attribute 'as_json'
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 107, in get_players
+    results = [ob.as_json() for ob in players]
+AttributeError: 'Player' object has no attribute 'as_json'
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 107, in get_players
+    players = json.dumps(players)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <Player: andy> is not JSON serializable
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 107, in get_players
+    data = serializers.serialize('json', all_objects)
+NameError: global name 'serializers' is not defined
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 108, in get_players
+    data = serializers.serialize('json', all_objects)
+NameError: global name 'all_objects' is not defined
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 109, in get_players
+    return HttpResponse(data, mimetype="application/json")
+NameError: global name 'HttpResponse' is not defined
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 111, in get_players
+    serializer.data
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 466, in data
+    ret = super(Serializer, self).data
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 213, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 435, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/relations.py", line 247, in to_representation
+    "the serializer." % self.__class__.__name__
+AssertionError: `HyperlinkedIdentityField` requires the request in the serializer context. Add `context={'request': request}` when instantiating the serializer.
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 111, in get_players
+    serializer.data
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 466, in data
+    ret = super(Serializer, self).data
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 213, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 435, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/relations.py", line 264, in to_representation
+    return self.get_url(value, self.view_name, request, format)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/relations.py", line 199, in get_url
+    if obj.pk is None:
+AttributeError: 'list' object has no attribute 'pk'
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 111, in get_players
+    serializer.data
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 618, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 213, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 568, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 435, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/relations.py", line 247, in to_representation
+    "the serializer." % self.__class__.__name__
+AssertionError: `HyperlinkedIdentityField` requires the request in the serializer context. Add `context={'request': request}` when instantiating the serializer.
+Internal Server Error: /gpdetail/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 111, in get_players
+    serializer.data
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 618, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 213, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 568, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 426, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/relations.py", line 103, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/fields.py", line 70, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'GamePlayerDetail' object has no attribute 'user'
+Internal Server Error: /players/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 97, in get_players
+    serializer.data
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 618, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 213, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 568, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/serializers.py", line 426, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/relations.py", line 103, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/fields.py", line 70, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'GamePlayerDetail' object has no attribute 'user'
+Internal Server Error: /players/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 93, in get_players
+    game_id = int(request.query_params['game_id'])
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'game_id'"
+Internal Server Error: /players/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 338, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 367, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/urlresolvers.py", line 361, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/peasnrice/django_projects/pamplesneak/pamplesneak/urls.py", line 4, in <module>
+    from games import views as game_views
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 102
+    return Response({'status': 'players received', serializer.data}, status=200)
+                                                                  ^
+SyntaxError: invalid syntax
+Internal Server Error: /players/get_players/
+Traceback (most recent call last):
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/viewsets.py", line 85, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 452, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/peasnrice/django_projects/env/lib/python2.7/site-packages/rest_framework/views.py", line 449, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/peasnrice/django_projects/pamplesneak/games/views.py", line 102, in get_players
+    return Response(serializer.data, {'status': 'players received'}, status=200)
+TypeError: __init__() got multiple values for keyword argument 'status'

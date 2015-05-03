@@ -46,8 +46,8 @@ class GamePlayerDetail(models.Model):
         return self.game.name
 
 class Phrase(models.Model):
-    game = models.ForeignKey(Game)
-    player = models.ForeignKey(Player)
+    gpd = models.ForeignKey(GamePlayerDetail)
+    recipient = models.ForeignKey(Player)
     phrase_text = models.CharField(max_length=200)
     created_on  = models.DateTimeField(editable=False)
     def __str__(self):

@@ -11,7 +11,7 @@ class PlayerAdmin(admin.ModelAdmin):
     }),
   )
 
-admin.site.register(Player, PlayerAdmin)
+admin.site.register(Player)
 admin.site.register(Game)
 admin.site.register(Phrase)
 admin.site.register(GamePlayerDetail)
